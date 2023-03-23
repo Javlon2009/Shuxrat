@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h1>signup</h1>
+    <form action="signin.html" method="post">
+        {% csrf_token %}
+
+        <div class="inputs">
+            <div class="input">
+                <input type="text" name="username" name="username" placeholder="username" id="">
+            </div>
+            
+            <div class="input">
+                <input type="password" name="password" name="password" id="" placeholder="password">
+            </div>
+            <div class="btns">
+                <button>Sign up</button>
+            </div>
+            <div class="a">
+                <a href="signin.html">sign in</a>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
